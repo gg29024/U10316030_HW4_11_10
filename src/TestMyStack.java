@@ -1,4 +1,6 @@
-
+//U10316030
+//楊子育
+//11.10
 
 
 
@@ -6,8 +8,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TestMyStack{
+	//Main method
 	public static void main(String[] args){
+			//Create an object
 			MyStack object = new MyStack();
+			//Create scanner
 			Scanner input = new Scanner(System.in);
 			System.out.print("Enter first string: ");
 			String s1 = input.next();
@@ -19,12 +24,14 @@ public class TestMyStack{
 			String s4 = input.next();
 			System.out.print("Enter fifth string: ");
 			String s5 = input.next();
+			//呼叫  push
 			object.push(s1);
 			object.push(s2);
 			object.push(s3);
 			object.push(s4);
 			object.push(s5);
 			
+			//當輸入的字串不是空的 他會傳入pop這個method
 			while (!object.isEmpty()){
 				System.out.println(object.pop());
 			}
