@@ -1,5 +1,7 @@
 
 
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,12 +25,15 @@ public class TestMyStack{
 			object.push(s4);
 			object.push(s5);
 			
+			while (!object.isEmpty()){
+				System.out.println(object.pop());
+			}
 
 			}
 }
 
 
-public class MyStack extends ArrayList<Object>{
+class MyStack extends ArrayList<Object>{
 	
 	public boolean isEmpty(){
 		return super.isEmpty();
